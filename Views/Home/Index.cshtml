@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Formula One Stats";
+}
+
+@section Styles {
+
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header">Recent Standings <span id="recentDetails" class="header-details"></span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <table id="recentStandingsTable" class="clickable-table w-100 noWrap">
+                            <thead>
+                                <tr>
+                                    <th>Position</th><th>Name</th><th>Team</th><th>Points</th><th></th><th></th>
+                                </tr>
+                            </thead>
+                        </table>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-body">
+                <!-- lap times of specific driver -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card link-card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header">Lap Times <span id="raceName" class="header-details"></span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="lapTimeChart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts?"></script>
+    <script src="~/Scripts/Home/home.js"></script>
+}
